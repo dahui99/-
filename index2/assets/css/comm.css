@@ -1,0 +1,180 @@
+/*공통*/
+.row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+section{
+	margin-bottom: 100px;
+}
+/*nav*/
+#nav ul li a span:before {
+	top: 3px;
+}
+.font1{
+		/*text-decoration: underline;*/
+		color: teal;
+		font-weight: bold;
+		}
+	div .box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: Teal;
+		border-radius: 50px;
+		width: 100%;
+		padding: 5px;
+		margin: 545px auto 300px;
+	}
+	.box > ul{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+	.box > ul > li{
+		position: relative;
+		color: white;
+	}
+   .box > ul > li::after{
+	   position: absolute;top: 0;left: 330%;
+	   content: "\f105";
+	   font-family: 'Line Awesome Free';
+	   font-weight: 600;
+   }
+	.box > ul > li:last-child::after {
+		display: none;
+	}
+.lst b{
+	color: #008080;
+	font-weight: bold;
+}
+.lst p{
+	color: #ffa07a;
+}
+.lst-detail1{
+	position: absolute;
+	top: -137px;left: -85px;
+	width: 220px;
+	text-align: left;
+}
+.lst-detail1::before{
+	content: '';
+	position: absolute;
+	top: 0;left: 0;
+	width: 1px;
+	height: 100%;
+	background: #008080;
+}
+.lst-detail1::after{
+	content: '';
+	position: absolute;
+	top: 0;left: -4px;
+	width: 10px;height: 10px;
+	border-radius: 50%;
+	background:#008080;
+}
+.lst-detail2{
+	position: absolute;
+	top: 55px;left: -85px;
+	width: 235px;
+	text-align: left;
+}
+.lst-detail2::before{
+	content: '';
+	position: absolute;
+	top: -7px;left: 0;
+	width: 1px;
+	height: 100%;
+	background: #008080;
+}
+.lst-detail2::after{
+	content: '';
+	position: absolute;
+	top: 208px;left: -4px;
+	width: 10px;height: 10px;
+	border-radius: 50%;
+	background:#008080;
+}
+.lst-detail3{
+	position: absolute;
+	top: -410px;left: -67px;
+	width: 220px;
+	text-align: left;
+}
+.lst-detail3::before{
+	content: '';
+	position: absolute;
+	top: 11px;left: 0;
+	width: 1px;
+	height: 100%;
+	background: #008080;
+}
+.lst-detail3::after{
+	content: '';
+	position: absolute;
+	top: 1px;left: -4px;
+	width: 10px;height: 10px;
+	border-radius: 50%;
+	background:#008080;
+}
+	.border{
+		width: 100%;
+		background: teal;
+		border: 10px solid teal;
+		border-radius: 10px;
+	}
+	.border1{
+		width: 80%;
+		background: teal;
+		border: 10px solid teal;
+		border-radius: 10px;
+	}
+	.border2{
+		width: 60%;
+		background: teal;
+		border: 10px solid teal;
+		border-radius: 10px;
+	}
+	.border3{
+		width: 50%;
+		background: teal;
+		border: 10px solid teal;
+		border-radius: 10px;
+	}
+	.border4{
+		width: 25%;
+		background: teal;
+		border: 10px solid teal;
+		border-radius: 10px;
+	}
+
+/*skill*/
+.sec_skill {
+	width: 60%;
+	text-align: left;
+}
+.sec_skill h3 {
+	text-align: center;
+}
+.sec_skill span {
+	display: block;
+	vertical-align: middle;
+}
+
+/*tablet*/
+@media screen and (max-width: 992px) {
+  .box ul li::after {
+    left: 200%;
+  }
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+   .box ul li::after {
+    left: 200%;
+  }
+}
